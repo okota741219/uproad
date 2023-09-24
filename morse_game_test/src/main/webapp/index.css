@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+body {
+text-align:center;
+font-size:1.4em;
+background-image:url("image/war.jpg");
+background-size:cover;
+}
+
+H1 {
+	margin:8rem 1rem 5rem 1rem;
+}
+
+a{
+	display: inline-block;
+	background-color: #b8860b;
+	border: 6px outset #daa520;
+	color:#fff;
+	cursor:pointer;
+	text-decoration: none;
+	margin: 0.2em 0.1em;
+	width: 150px;
+	padding: 0.5rem 0;
+	text-align: center;
+}
+
+a:hover{
+	background-color:#da9000;
+}

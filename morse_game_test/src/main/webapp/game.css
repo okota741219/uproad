@@ -1,0 +1,87 @@
+.open {
+	cursor:pointer; 
+}
+#popup {
+	display: none;
+}
+.overlay {
+	display: none;
+}
+#popup:checked + .overlay {
+	z-index: 10000;
+	position: fixed;
+	display: block;
+	background-color: #00000070;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+}
+.window {
+	width: 90vw;
+	max-width: 380px;
+	height: 200px;
+	background-color: #5b5b5b;
+	border-radius: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.text {
+	font-size: 25px;
+	margin: 0;
+	color: #fcfff9;
+}
+.close {
+	cursor:pointer;
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	font-size: 20px;
+}
+
+.styled {
+	z-index: 0;
+    border: 0;
+    line-height: 3;
+    padding: 0 70px;
+    font-size: 1rem;
+    bottom: px;
+    text-align: right;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgb(64, 76, 246);
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.styled:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.styled:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.parent {
+    display: flex;
+    justify-content: space-between;
+}
+
+#make_space {
+    height: 200px;
+}
+
+#gameprogress {
+    margin: 20px 0px 0px 50px;
+}
+
+#get_words {
+    display:none;
+}
